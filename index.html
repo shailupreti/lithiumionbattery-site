@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#0b2a4a" />
+<title>Visit C4V &amp; Near Prime &middot; Southern Tier, New York</title>
+<meta name="description" content="Directions, parking and travel information for visitors to the C4V Innovation Center in Vestal and the Near Prime Technologies Gigafactory in Endicott, New York." />
+<meta property="og:title" content="Visit C4V &amp; Near Prime" />
+<meta property="og:description" content="Directions, airports, parking and travel details for visitors to our R&amp;D hub in Vestal and our Gigafactory in Endicott, NY." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.lithiumionbattery.info/" />
+<link rel="canonical" href="https://www.lithiumionbattery.info/" />
+<style>
+  :root{
+    --bg:#f5f7fa;
+    --ink:#0f172a;
+    --muted:#475569;
+    --line:#e2e8f0;
+    --brand-blue:#0b2a4a;
+    --brand-blue-soft:#e8eef6;
+    --brand-green:#143a2a;
+    --brand-green-soft:#e6efe9;
+    --accent:#1f6feb;
+    --accent-green:#1f8c5a;
+    --card:#ffffff;
+    --shadow:0 1px 2px rgba(15,23,42,.05),0 12px 32px rgba(15,23,42,.07);
+    --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:24px 20px 80px}
+
+  header.hero{
+    background:
+      radial-gradient(800px 400px at -10% -30%, rgba(31,111,235,.25), transparent 60%),
+      radial-gradient(600px 400px at 120% 130%, rgba(31,140,90,.25), transparent 60%),
+      linear-gradient(135deg,#0b2a4a 0%, #143a2a 100%);
+    color:#fff;border-radius:var(--radius);padding:40px 32px;
+    box-shadow:var(--shadow);position:relative;overflow:hidden;
+  }
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+  header h1{font-size:clamp(28px,5vw,42px);margin:10px 0 8px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+  header p.lede{font-size:clamp(15px,2.2vw,18px);margin:0;opacity:.92;max-width:58ch}
+  header .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  header .pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;
+    background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:13px;font-weight:500}
+
+  section.intro{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 28px;margin-top:20px;box-shadow:var(--shadow)}
+  section.intro p{margin:0 0 10px;color:var(--ink)}
+  section.intro p:last-child{margin-bottom:0}
+  .muted{color:var(--muted)}
+
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+  @media (max-width:780px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .card .banner{height:90px;display:flex;align-items:flex-end;padding:16px 20px;color:#fff;position:relative}
+  .card.c4v .banner{background:linear-gradient(135deg,var(--brand-blue) 0%, #113f72 100%)}
+  .card.np .banner{background:linear-gradient(135deg,var(--brand-green) 0%, #1f5d40 100%)}
+  .card .banner .tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;position:absolute;top:14px;left:20px}
+  .card .banner h2{margin:0;font-size:22px;font-weight:700;letter-spacing:-.01em}
+  .card .body{padding:20px 22px;display:flex;flex-direction:column;flex:1}
+  .card .addr{color:var(--muted);font-size:14px;margin:0 0 10px}
+  .card .desc{margin:0 0 16px;font-size:15px;color:var(--ink)}
+  .card .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}
+  .card .actions .full{grid-column:1 / -1}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    padding:12px 14px;border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;
+    border:1px solid transparent;min-height:44px;transition:background .15s ease, transform .05s ease}
+  .btn:active{transform:translateY(1px)}
+  .card.c4v .btn.primary{background:var(--brand-blue);color:#fff}
+  .card.c4v .btn.primary:hover{background:#113f72;text-decoration:none}
+  .card.c4v .btn.secondary{background:var(--brand-blue-soft);color:var(--brand-blue);border-color:var(--brand-blue-soft)}
+  .card.c4v .btn.secondary:hover{background:#dbe4f1;text-decoration:none}
+  .card.np .btn.primary{background:var(--brand-green);color:#fff}
+  .card.np .btn.primary:hover{background:#1f5d40;text-decoration:none}
+  .card.np .btn.secondary{background:var(--brand-green-soft);color:var(--brand-green);border-color:var(--brand-green-soft)}
+  .card.np .btn.secondary:hover{background:#d6e2db;text-decoration:none}
+
+  section.travel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 28px;margin-top:20px;box-shadow:var(--shadow)}
+  section.travel h2{margin:0 0 10px;font-size:18px;letter-spacing:-.01em;color:var(--ink)}
+  .airports-lite{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:8px}
+  @media (max-width:700px){.airports-lite{grid-template-columns:1fr 1fr}}
+  @media (max-width:460px){.airports-lite{grid-template-columns:1fr}}
+  .ap{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .ap .code{display:inline-block;background:var(--brand-blue-soft);color:var(--brand-blue);
+    font-weight:700;font-size:12px;padding:2px 8px;border-radius:999px;margin-right:6px}
+  .ap .name{display:block;font-weight:600;margin-top:6px;font-size:14.5px}
+  .ap .time{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+  .ap .note{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:#ecfdf5;color:#065f46;font-weight:600;margin-left:6px}
+
+  .together{margin-top:14px;padding:12px 14px;border-left:3px solid var(--accent);
+    background:var(--brand-blue-soft);border-radius:8px;font-size:14.5px;color:var(--ink)}
+
+  footer.f{margin-top:28px;padding:18px 20px;color:var(--muted);font-size:13px;text-align:center}
+  footer.f strong{color:var(--ink)}
+  .logo-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:8px;opacity:.9}
+  .logo-row .brand{font-size:13px;font-weight:600;color:var(--ink)}
+  .logo-row .dot{width:4px;height:4px;border-radius:50%;background:var(--muted);display:inline-block}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Plan Your Visit</div>
+    <h1>Visit C4V &amp; Near Prime</h1>
+    <p class="lede">Two sites, about 15 minutes apart in New York's Southern Tier, pioneering next-generation lithium-ion cell chemistry and domestic Gigafactory manufacturing. This page has everything you'll need to plan your trip.</p>
+    <div class="pills">
+      <span class="pill">Vestal, NY &mdash; R&amp;D</span>
+      <span class="pill">Endicott, NY &mdash; Gigafactory</span>
+      <span class="pill">~15 min between sites</span>
+    </div>
+  </header>
+
+  <section class="intro">
+    <p><strong>C4V</strong> is a battery technology company developing proprietary cathode and cell chemistries, based at our Innovation Center in Vestal. <strong>Near Prime Technologies</strong> is our commercial manufacturing arm &mdash; operating a lithium-ion cell Gigafactory in Endicott. Most visitors tour <em>both</em> sites in a single half-day.</p>
+    <p class="muted">Tap a location below to open the full visitor guide with driving directions, airport details, parking instructions and on-arrival steps.</p>
+  </section>
+
+  <div class="cards">
+
+    <article class="card c4v">
+      <div class="banner">
+        <span class="tag">R&amp;D Hub</span>
+        <h2>C4V Innovation Center</h2>
+      </div>
+      <div class="body">
+        <p class="addr">85 Murray Hill Rd, Suite 2400 &middot; Vestal, NY 13850</p>
+        <p class="desc">Our research and innovation headquarters. Cell chemistry development, prototyping and pilot lines, co-located with the Binghamton University Innovative Technologies Complex.</p>
+        <div class="actions">
+          <a class="btn primary full" href="./c4v/">Open Visitor Guide</a>
+          <a class="btn secondary" href="https://maps.app.goo.gl/CPwvhv7TPMDDxt4eA" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Google Maps
+          </a>
+          <a class="btn secondary" href="https://maps.apple.com/?daddr=42.094061,-75.958412&dirflg=d&q=C4V+Innovation+Center" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            Apple Maps
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card np">
+      <div class="banner">
+        <span class="tag">Gigafactory</span>
+        <h2>Near Prime Technologies</h2>
+      </div>
+      <div class="body">
+        <p class="addr">38 Hill Avenue &middot; Endicott, NY 13760</p>
+        <p class="desc">Our lithium-ion cell manufacturing facility. Production floor, quality labs, and scale-up capacity for domestic battery supply.</p>
+        <div class="actions">
+          <a class="btn primary full" href="./nearprime/">Open Visitor Guide</a>
+          <a class="btn secondary" href="https://www.google.com/maps/dir/?api=1&destination=38+Hill+Avenue+Endicott+NY+13760" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Google Maps
+          </a>
+          <a class="btn secondary" href="https://maps.apple.com/?daddr=38+Hill+Avenue+Endicott+NY+13760&dirflg=d&q=Near+Prime+Technologies" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            Apple Maps
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="travel">
+    <h2>Getting Here &mdash; Quick Airport Summary</h2>
+    <p class="muted">Both sites share the same regional airport options. A full airport breakdown &mdash; with drive times, notes and rental car availability &mdash; is on each site's visitor guide.</p>
+    <div class="airports-lite" aria-label="Nearby airports summary">
+      <div class="ap">
+        <span class="code">BGM</span><span class="note">Closest</span>
+        <span class="name">Greater Binghamton</span>
+        <span class="time">~20 min drive</span>
+      </div>
+      <div class="ap">
+        <span class="code">SYR</span><span class="note">Recommended</span>
+        <span class="name">Syracuse Hancock Intl</span>
+        <span class="time">~1 hr 30 min drive</span>
+      </div>
+      <div class="ap">
+        <span class="code">EWR</span>
+        <span class="name">Newark Liberty Intl</span>
+        <span class="time">~3 hr 15 min drive &middot; intl gateway</span>
+      </div>
+      <div class="ap">
+        <span class="code">PHL</span>
+        <span class="name">Philadelphia Intl</span>
+        <span class="time">~3 hr 15 min drive &middot; intl gateway</span>
+      </div>
+      <div class="ap">
+        <span class="code">AVP</span>
+        <span class="name">Wilkes-Barre / Scranton</span>
+        <span class="time">~1 hr 20 min drive</span>
+      </div>
+      <div class="ap">
+        <span class="code">ALB</span>
+        <span class="name">Albany Intl</span>
+        <span class="time">~2 hr 50 min drive</span>
+      </div>
+    </div>
+    <div class="together">
+      <strong>Visiting both sites?</strong> Endicott and Vestal are ~15 minutes apart by car. Most half-day visits start at Near Prime (Gigafactory tour) and end at the C4V Innovation Center, or vice versa &mdash; we'll help coordinate the routing.
+    </div>
+  </section>
+
+  <footer class="f">
+    Questions or changes? Contact <strong>Alex</strong> &middot; Admin Assistant to Shailesh Upreti &middot;
+    <a href="mailto:admin@c4v.us">admin@c4v.us</a> &middot; <a href="tel:+16074442443">+1 (607) 444-2443</a>
+    <div class="logo-row">
+      <span class="brand">C4V</span><span class="dot"></span>
+      <span class="brand">Near Prime Technologies</span><span class="dot"></span>
+      <a href="https://www.c4v.us" target="_blank" rel="noopener">c4v.us</a><span class="dot"></span>
+      <a href="https://www.nearprime.us" target="_blank" rel="noopener">nearprime.us</a>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
